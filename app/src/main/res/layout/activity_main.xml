@@ -1,0 +1,240 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:id="@+id/leftLayout"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:background="@color/gray"
+        android:orientation="vertical"
+        android:padding="16dp">
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="30dp"
+            android:layout_above="@+id/searchView"
+            android:layout_marginBottom="5dp"
+            android:fontFamily="sans-serif-medium"
+            android:text="Merhaba Umutcan!"
+            android:textColor="@color/purple"
+            android:textSize="25sp" />
+
+
+        <SearchView
+            android:id="@+id/searchView"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_alignParentBottom="true"
+            android:background="@drawable/border"
+            android:backgroundTint="@color/white" />
+
+    </RelativeLayout>
+
+
+    <!-- Bottom panel   -->
+
+    <RelativeLayout
+        android:id="@+id/bottomLayout"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:background="@color/gray"
+        android:orientation="vertical"
+        android:padding="16dp">
+
+
+        <RelativeLayout
+            android:id="@+id/getirLayout"
+            android:layout_width="200dp"
+            android:layout_height="210dp"
+            android:background="@drawable/border"
+            android:backgroundTint="@color/white">
+
+            <ImageView
+                android:layout_width="100dp"
+                android:layout_height="120dp"
+                android:layout_below="@+id/getirBag"
+                android:layout_alignParentEnd="true"
+                android:background="@drawable/getirBike" />
+
+            <ImageView
+                android:id="@+id/getirBag"
+                android:layout_width="150dp"
+                android:layout_height="130dp"
+                android:background="@drawable/getirBagMain" />
+
+
+            <TextView
+                android:id="@+id/getirTextView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5dp"
+                android:fontFamily="sans-serif-medium"
+                android:text="getir"
+                android:textColor="@color/purple"
+                android:textSize="30sp" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/getirBigLayout"
+            android:layout_width="200dp"
+            android:layout_height="100dp"
+            android:layout_marginLeft="15dp"
+            android:layout_toRightOf="@+id/getirLayout"
+            android:background="@drawable/border"
+            android:backgroundTint="@color/white">
+
+            <TextView
+                android:id="@+id/viewGetirBig"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5dp"
+                android:fontFamily="sans-serif-medium"
+                android:text="getirbüyük"
+                android:textColor="@color/purple"
+                android:textSize="30sp" />
+            <ImageView
+                android:layout_width="110dp"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/viewGetirBig"
+                android:layout_alignParentEnd="true"
+                android:background="@drawable/getirBag" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/getirBazaarLayout"
+            android:layout_width="200dp"
+            android:layout_height="100dp"
+            android:layout_below="@+id/getirBigLayout"
+            android:layout_marginLeft="15dp"
+            android:layout_marginTop="10dp"
+            android:layout_toRightOf="@+id/getirLayout"
+            android:background="@drawable/border"
+            android:backgroundTint="@color/white"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/viewGetirBazaar"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5dp"
+                android:fontFamily="sans-serif-medium"
+                android:text="getirçarşı"
+                android:textColor="@color/purple"
+                android:textSize="30sp" />
+            <ImageView
+                android:layout_width="100dp"
+                android:layout_height="0dp"
+                android:layout_below="@+id/viewGetirBazaar"
+                android:layout_alignParentEnd="true"
+                android:scaleX="1.5"
+                android:scaleY="1.8"
+                android:layout_alignParentBottom="true"
+                android:background="@drawable/getirBazaar" />
+        </RelativeLayout>
+
+
+        <RelativeLayout
+            android:id="@+id/getirSuLayout"
+            android:layout_width="200dp"
+            android:layout_height="90dp"
+            android:layout_below="@+id/getirLayout"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/border"
+            android:backgroundTint="@color/white">
+
+            <TextView
+                android:id="@+id/textGetirWater"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="sans-serif-medium"
+                android:text="getirsu"
+                android:textColor="@color/purple"
+                android:textSize="30sp" />
+
+            <ImageView
+                android:layout_width="100dp"
+                android:layout_height="match_parent"
+                android:layout_alignParentEnd="true"
+                android:background="@drawable/getirWater"
+                android:scaleType="centerCrop" />
+
+
+        </RelativeLayout>
+
+
+        <RelativeLayout
+            android:id="@+id/getirTaxiLayout"
+            android:layout_width="200dp"
+            android:layout_height="100dp"
+            android:layout_below="@+id/getirSuLayout"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/border"
+            android:backgroundTint="@color/white">
+
+
+            <ImageView
+                android:layout_width="150dp"
+                android:layout_height="90dp"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentBottom="true"
+                android:background="@drawable/getirTaxi" />
+
+            <TextView
+                android:id="@+id/textgetirTaxi"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentTop="true"
+                android:fontFamily="sans-serif-medium"
+                android:text="getirbitaksi"
+                android:textColor="@color/purple"
+                android:textSize="30sp" />
+
+
+        </RelativeLayout>
+
+
+
+
+
+        <RelativeLayout
+            android:id="@+id/getirFoodLayout"
+            android:layout_width="200dp"
+            android:layout_height="200dp"
+            android:layout_below="@+id/getirBazaarLayout"
+            android:layout_marginLeft="15dp"
+            android:layout_marginTop="10dp"
+            android:layout_toRightOf="@+id/getirLayout"
+            android:background="@drawable/border"
+            android:backgroundTint="@color/white"
+            android:orientation="horizontal">
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="getiryemek"
+                android:textSize="30sp"
+                android:textColor="@color/purple"
+                android:fontFamily="sans-serif-medium"/>
+
+            <ImageView
+                android:layout_width="150dp"
+                android:layout_height="130dp"
+                android:background="@drawable/getirHamburger"
+                android:layout_alignParentBottom="true"
+                android:layout_alignParentEnd="true"/>
+
+
+        </RelativeLayout>
+
+
+    </RelativeLayout>
+
+
+</LinearLayout>
